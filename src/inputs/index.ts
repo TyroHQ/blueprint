@@ -1,4 +1,10 @@
-"use strict";
+export interface IUserInput {
+  inputName: string;
+  selectedTemplatePath: string;
+}
 
-export * from "./getUserInput";
-export { expandFolderPath } from "./getSelectedTemplatePath";
+export interface IMultiStepData {
+  totalSteps: number;
+  step: number;
+  title: string;
+}
